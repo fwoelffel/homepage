@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
     query={graphql`
       query SiteTitleQuery {
         site {
+          buildTime
           siteMetadata {
             title
           }
@@ -39,7 +40,7 @@ const Layout = ({ children }) => (
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
-            <p>Last built {new Date().toString()}</p>
+            <p>Last built {new Date(data.site.buildTime).toLocaleDateString()} at {new Date(data.site.buildTime).toLocaleTimeString()}</p>
           </footer>
         </div>
       </>
