@@ -4511,7 +4511,7 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-buildtime-timezone@^1.0.0:
+gatsby-buildtime-timezone@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-buildtime-timezone/-/gatsby-buildtime-timezone-1.0.0.tgz#641f85aa816c4343370588301080703d5dcd6450"
   integrity sha512-UbXtirWMUB5NCe0ZB9DAfdRGMgUaUumj0JCSi1kkQacFLF5YmkfzSHBwmWklYrbnxq/3cR8bp6MOFHx6Syl80A==
