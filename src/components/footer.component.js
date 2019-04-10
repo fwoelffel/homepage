@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Footer } from "rbx"
+import { Block, Container, Footer } from "rbx"
 import { StaticQuery } from "gatsby"
 
 
@@ -15,7 +15,8 @@ const FooterComponent = () => (
     render={data => (
       <Footer>
         <Container textAlign={"centered"}>
-          <p className={"has-text-grey-light"}>Last built {new Date(data.site.buildTime).toLocaleDateString()} at {new Date(data.site.buildTime).toLocaleTimeString()}</p>
+          <Block backgroundColor={"warning"} textWeight={"bold"}>Disclaimer: This is still a work in progress.</Block>
+          <Block textColor={"grey-light"}>Last built {new Date(data.site.buildTime).toLocaleDateString()} at {new Date(data.site.buildTime).toLocaleTimeString()}</Block>
         </Container>
       </Footer>
     )}
