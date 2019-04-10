@@ -18,8 +18,8 @@ const HeroComponent = () => (
     render={data => (
       <Hero gradient color={"primary"} size={"fullheight"}>
         <Hero.Body>
-          <Container>
-            <Title>{data.site.siteMetadata.title}</Title>
+          <Container textAlign={"centered"}>
+            <Title size={1}>{data.site.siteMetadata.title}</Title>
             <Title subtitle>
               {data.site.siteMetadata.description}
             </Title>
