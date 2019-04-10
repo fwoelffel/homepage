@@ -5,10 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
+import "./style.scss"
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
-import "./style.scss"
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false;
 
 const Layout = ({ children }) => (
   <StaticQuery
