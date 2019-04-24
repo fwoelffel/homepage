@@ -30,16 +30,16 @@ const HeroComponent = () => (
             </Block>
             <Block>
               <a className={"social"} href={"https://www.linkedin.com/in/fredericwoelffel/"} target={"_blank"}>
-                <FontAwesomeIcon icon={faLinkedin} size="4x" />
+                <FontAwesomeIcon className={"tablet"} icon={faLinkedin} size="3x" />
               </a>
               <a className={"social"} href={"https://twitter.com/fwoelffel"} target={"_blank"}>
-                <FontAwesomeIcon icon={faTwitter} size="4x" />
+                <FontAwesomeIcon icon={faTwitter} size="3x" />
               </a>
               <a className={"social"} href={"https://github.com/fwoelffel"} target={"_blank"}>
-                <FontAwesomeIcon icon={faGithub} size="4x" />
+                <FontAwesomeIcon icon={faGithub} size="3x" />
               </a>
               <a className={"social"} href={"https://frdricwoelffel.typeform.com/to/TgRdLj"} target={"_blank"}>
-                <FontAwesomeIcon icon={faEnvelope} size="4x" />
+                <FontAwesomeIcon icon={faEnvelope} size="3x" />
               </a>
             </Block>
           </Container>
