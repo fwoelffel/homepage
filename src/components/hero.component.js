@@ -23,7 +23,7 @@ const HeroComponent = () => (
         <Hero.Body>
           <Container textAlign={"centered"}>
             <Block>
-              <Title size={1}>{data.site.siteMetadata.title}</Title>
+              <Title className={"is-uppercase"} size={1} spaced>{data.site.siteMetadata.title}</Title>
               <Title subtitle>
                 {data.site.siteMetadata.description}
               </Title>
