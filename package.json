@@ -5,14 +5,14 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "2.4.2",
-    "gatsby-buildtime-timezone": "1.0.0",
+    "@fortawesome/fontawesome-free": "5.8.2",
     "@fortawesome/fontawesome-svg-core": "1.2.18",
     "@fortawesome/free-brands-svg-icons": "5.8.2",
     "@fortawesome/free-solid-svg-icons": "5.8.2",
     "@fortawesome/react-fontawesome": "0.1.4",
-    "@fortawesome/fontawesome-free": "5.8.2",
     "bulma": "0.7.4",
+    "gatsby": "2.4.2",
+    "gatsby-buildtime-timezone": "1.0.0",
     "gatsby-image": "2.0.41",
     "gatsby-plugin-manifest": "2.1.1",
     "gatsby-plugin-offline": "2.1.0",
@@ -26,7 +26,8 @@
     "rbx": "2.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-helmet": "5.2.1"
+    "react-helmet": "5.2.1",
+    "trianglify": "^2.0.0"
   },
   "devDependencies": {
     "gh-pages": "2.0.1",
