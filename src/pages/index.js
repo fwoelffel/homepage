@@ -11,6 +11,7 @@ const IndexPage = () => (
     query={graphql`
       query {
         site {
+          buildTime,
           siteMetadata {
             title,
             description
@@ -26,7 +27,9 @@ const IndexPage = () => (
             title={data.site.siteMetadata.title}
             description={data.site.siteMetadata.description}
           />
-          <FooterComponent/>
+          <FooterComponent
+            buildDate={new Date(data.site.buildTime)}
+          />
         </Layout>
       )
     }>
