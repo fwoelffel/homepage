@@ -5,7 +5,7 @@ const HeroComponent = ({ title, description }) => (
   <section class="hero is-fullheight is-bold is-info">
     <div class="hero-body has-text-centered">
       <div class="container">
-        <h1 class="title is-1 is-spaced">{title}</h1>
+        <h1 class="title is-1 is-spaced is-uppercase">{title}</h1>
         <h2 class="subtitle">{description}</h2>
         <div class="is-block">
           <a className="social"
