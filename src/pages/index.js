@@ -7,7 +7,7 @@ import FooterComponent from "../components/footer.component"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[]} />
+    <SEO title="Frederic Woelffel | Node.js engineer" keywords={[]} />
     <HeroComponent/>
     <FooterComponent/>
   </Layout>
