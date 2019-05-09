@@ -1,9 +1,6 @@
 import { graphql, StaticQuery } from "gatsby"
-import { Block, Container, Hero, Title } from "rbx"
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
 const HeroComponent = () => (
   <StaticQuery
@@ -19,35 +16,32 @@ const HeroComponent = () => (
       }
     `}
     render={data => (
-      <Hero gradient color={"primary"} size={"fullheight"}>
-        <Hero.Body>
-          <Container textAlign={"centered"}>
-            <Block>
-              <Title className={"is-uppercase"} size={1} spaced>{data.site.siteMetadata.title}</Title>
-              <Title subtitle>
-                {data.site.siteMetadata.description}
-              </Title>
-            </Block>
-            <Block>
-              <a className={"social"} href={"https://www.linkedin.com/in/fredericwoelffel/"} target={"_blank"}>
-                <FontAwesomeIcon className={"tablet"} icon={faLinkedin} size="3x" />
+      <section class="hero is-fullheight is-bold is-info">
+        <div class="hero-body has-text-centered">
+          <div class="container">
+            <h1 class="title is-1">{data.site.siteMetadata.title}</h1>
+            <h2 class="subtitle">{data.site.siteMetadata.description}</h2>
+            <div class="is-block">
+              <a className="social" href="https://www.linkedin.com/in/fredericwoelffel/" target="_blank"
+                 rel="noopener noreferrer">
+                <FaLinkedin size="4em"/>
               </a>
-              <a className={"social"} href={"https://twitter.com/fwoelffel"} target={"_blank"}>
-                <FontAwesomeIcon icon={faTwitter} size="3x" />
+              <a className="social" href="https://twitter.com/fwoelffel" target="_blank" rel="noopener noreferrer">
+                <FaTwitter size="4em"/>
               </a>
-              <a className={"social"} href={"https://github.com/fwoelffel"} target={"_blank"}>
-                <FontAwesomeIcon icon={faGithub} size="3x" />
+              <a className="social" href="https://github.com/fwoelffel" target="_blank" rel="noopener noreferrer">
+                <FaGithub size="4em"/>
               </a>
-              <a className={"social"} href={"https://frdricwoelffel.typeform.com/to/TgRdLj"} target={"_blank"}>
-                <FontAwesomeIcon icon={faEnvelope} size="3x" />
+              <a className="social" href="https://frdricwoelffel.typeform.com/to/TgRdLj" target="_blank"
+                 rel="noopener noreferrer">
+                <FaEnvelope size="4em"/>
               </a>
-            </Block>
-          </Container>
-        </Hero.Body>
-      </Hero>
+            </div>
+          </div>
+        </div>
+      </section>
     )}
   />
 )
 
-
-export default HeroComponent
+export default HeroComponent;
