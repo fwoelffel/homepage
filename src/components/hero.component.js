@@ -5,7 +5,7 @@ const HeroComponent = ({ title, description }) => (
   <section class="hero is-fullheight is-bold is-info">
     <div class="hero-body has-text-centered">
       <div class="container">
-        <h1 class="title is-1">{title}</h1>
+        <h1 class="title is-1 is-spaced">{title}</h1>
         <h2 class="subtitle">{description}</h2>
         <div class="is-block">
           <a className="social"
@@ -27,7 +27,7 @@ const HeroComponent = ({ title, description }) => (
             <FaGithub size="4em"/>
           </a>
           <a className="social"
-             ref="https://frdricwoelffel.typeform.com/to/TgRdLj"
+             href="https://frdricwoelffel.typeform.com/to/TgRdLj"
              target="_blank"
              rel="noopener noreferrer">
             <FaEnvelope size="4em"/>
