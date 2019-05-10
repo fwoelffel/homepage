@@ -1,7 +1,13 @@
 @import '~bulma/bulma.sass';
 @import "~@fortawesome/fontawesome-free/css/brands.min.css";
 @import "~@fortawesome/fontawesome-svg-core/styles.css";
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 
 a.social {
   margin: 10px;
+}
+
+.hero .title {
+  font-family: "Rubik";
 }
