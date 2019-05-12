@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Frederic Woelffel`,
-    description: `Backend engineer, Node.js expert`,
+    position: `Backend web developer`,
+    description: `I'm a backend web developer with a great affinity with Node.js.
+    Welcome to my landing page, where you'll find all you need to know more about me and get in touch.`,
     author: `@fwoelffel`,
   },
   plugins: [

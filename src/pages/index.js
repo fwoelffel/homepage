@@ -14,7 +14,8 @@ const IndexPage = () => (
           buildTime,
           siteMetadata {
             title,
-            description
+            description,
+            position
           }
         }
       }
@@ -22,10 +23,14 @@ const IndexPage = () => (
     render={
       data => (
         <Layout>
-          <SEO title="Frederic Woelffel | Node.js engineer" keywords={[]} />
-          <HeroComponent
+          <SEO
             title={data.site.siteMetadata.title}
             description={data.site.siteMetadata.description}
+            keywords={[]}
+          />
+          <HeroComponent
+            title={data.site.siteMetadata.title}
+            subtitle={data.site.siteMetadata.position}
           />
           <FooterComponent
             buildDate={new Date(data.site.buildTime)}

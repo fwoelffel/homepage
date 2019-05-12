@@ -1,12 +1,15 @@
 import React from "react"
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
-const HeroComponent = ({ title, description }) => (
+const HeroComponent = ({ title, subtitle }) => (
   <section class="hero is-fullheight is-bold is-info">
     <div class="hero-body has-text-centered">
       <div class="container">
         <h1 class="title is-1 is-spaced is-uppercase">{title}</h1>
-        <h2 class="subtitle">{description}</h2>
+        {subtitle && subtitle.length
+          ? <h2 class="subtitle">{subtitle}</h2>
+          : null
+        }
         <div class="is-block">
           <a className="social"
              href="https://www.linkedin.com/in/fredericwoelffel/"
