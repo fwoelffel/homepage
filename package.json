@@ -11,7 +11,7 @@
     "@fortawesome/free-solid-svg-icons": "5.8.2",
     "@fortawesome/react-fontawesome": "0.1.4",
     "bulma": "0.7.4",
-    "gatsby": "2.5.7",
+    "gatsby": "2.6.0",
     "gatsby-buildtime-timezone": "1.0.0",
     "gatsby-image": "2.1.0",
     "gatsby-plugin-google-analytics": "2.0.20",
