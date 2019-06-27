@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroComponent from "../components/hero.component"
-import FooterComponent from "../components/footer.component"
 import { StaticQuery } from "gatsby"
 
 const IndexPage = () => (
@@ -31,9 +30,6 @@ const IndexPage = () => (
           <HeroComponent
             title={data.site.siteMetadata.title}
             subtitle={data.site.siteMetadata.position}
-          />
-          <FooterComponent
-            buildDate={new Date(data.site.buildTime)}
           />
         </Layout>
       )

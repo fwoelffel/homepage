@@ -10,6 +10,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 import { config } from '@fortawesome/fontawesome-svg-core'
+import FooterComponent from "./footer.component"
 config.autoAddCss = false;
 
 const Layout = ({ children }) => (
@@ -20,12 +21,16 @@ const Layout = ({ children }) => (
           siteMetadata {
             title
           }
+          buildTime
         }
       }
     `}
     render={data => (
       <>
         <main>{children}</main>
+        <FooterComponent
+          buildDate={new Date(data.site.buildTime)}
+        />
       </>
     )}
   />
