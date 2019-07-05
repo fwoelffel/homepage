@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import HeroComponent from "../components/hero.component"
 import { StaticQuery } from "gatsby"
 
@@ -21,12 +20,9 @@ const IndexPage = () => (
     `}
     render={
       data => (
-        <Layout>
-          <SEO
-            title={data.site.siteMetadata.title}
-            description={data.site.siteMetadata.description}
-            keywords={[]}
-          />
+        <Layout
+          description={data.site.siteMetadata.description}
+        >
           <HeroComponent
             title={data.site.siteMetadata.title}
             subtitle={data.site.siteMetadata.position}
